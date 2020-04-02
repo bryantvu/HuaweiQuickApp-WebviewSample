@@ -25,19 +25,21 @@ Ensure that USB connected device has Huawei Quick App Loader installed as well a
 
 
 
-### Create and run standalone RPK file
+### Create a standalone RPK file
 
 To build the RPK file, go to Build > Run Release
 
-<kbd>
-  <img src="pictures/build_release.png" height="600"/>
-</kbd>
+<img src="pictures/build_release.png" height="600"/>
 
+Press OK to confirm settings and start build.
 
+<img src="pictures/build_cert.png" height="500"/>
 
-<kbd>
-  <img src="pictures/build_cert.png" height="500"/>
-</kbd>
+The RPK file is located in the /dist/ folder found in the root of the project. This file can be shared and run on any test device that has the Huawei Quick App Loader installed. Some email services may block incoming/outgoing emails with attached RPK files, and an alternative file sharing method is recommended.
+
+### Run the RPK file
+
+Connect the test device via USB and ensure that the USB settings have been set to file transfer.
 
 <kbd>
   <img src="pictures/device_downloads.jpg" height="500"/>
