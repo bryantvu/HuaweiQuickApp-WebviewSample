@@ -2,7 +2,7 @@
 Huawei Quick App Sample featuring WebView feature
 
 <kbd>
-  <img src="pictures/QuickApp_WebView.jpg" height="600"/>
+  <img src="pictures/QuickApp_WebView.jpg" height="500"/>
 </kbd>
 
 ## How to use
@@ -20,7 +20,7 @@ https://developer.huawei.com/consumer/en/doc/development/quickApp-Guides/quickap
 Ensure that USB connected device has Huawei Quick App Loader installed as well as USB debugging enabled.
 
 <kbd>
-  <img src="pictures/QuickAppLoader_installed.jpg" height="600"/>
+  <img src="pictures/QuickAppLoader_installed.jpg" height="500"/>
 </kbd>
 
 
@@ -29,7 +29,7 @@ Ensure that USB connected device has Huawei Quick App Loader installed as well a
 
 To build the RPK file, go to Build > Run Release
 
-<img src="pictures/build_release.png" height="600"/>
+<img src="pictures/build_release.png" height="500"/>
 
 Press OK to confirm settings and start build.
 
