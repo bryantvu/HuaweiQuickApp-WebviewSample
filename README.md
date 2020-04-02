@@ -35,7 +35,7 @@ Press OK to confirm settings and start build.
 
 The RPK file is located in the /dist/ folder found in the root of the project. This file can be shared and run on any test device that has the Huawei Quick App Loader installed. Some email services may block incoming/outgoing emails with attached RPK files, and an alternative file sharing method is recommended.
 
-### Run the RPK file
+### Run a standalone RPK file
 
 Connect the test device via USB and ensure that the USB settings have been set to file transfer. Copy the RPK file over to the Downloads folder, launch the Huawei Quick App Loader, and tap the "+" button at the top right.
 
@@ -48,3 +48,17 @@ Navigate to the Downloads folder and select the RPK file. The Quick App has been
 <kbd>
   <img src="pictures/device_downloads.jpg" height="500"/>
 </kbd>
+
+### Change WebView URL
+
+Change the value of "src" in the <web> object located at the top of the page of /src/Hello/hello.ux to the desired website URL.
+
+```html
+<template>
+    <div class="container">
+        <web src="https://www.uber.com/" id="web" ></web>
+    </div>
+</template>
+```
+
+<img src="pictures/code_url.png" height="400"/>
