@@ -5,6 +5,10 @@ Huawei Quick App Sample featuring WebView feature
   <img src="pictures/QuickApp_WebView.jpg" height="500"/>
 </kbd>
 
+RPK download
+
+https://github.com/bryantvu/HuaweiQuickApp-WebviewSample/tree/master/dist
+
 ## How to use
 
 ### Install Quick App development tools
