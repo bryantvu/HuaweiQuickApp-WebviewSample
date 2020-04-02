@@ -40,5 +40,5 @@ To build the RPK file, go to Build > Run Release
 </kbd>
 
 <kbd>
-  <img src="pictures/device_downloads.jpg" height="600"/>
+  <img src="pictures/device_downloads.jpg" height="500"/>
 </kbd>
