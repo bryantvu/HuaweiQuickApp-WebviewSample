@@ -8,20 +8,10 @@
             <input type="button" class="btn" onclick="loadUrl" value="Uber Website" />
         </div> -->
         <web src="https://www.uber.com/" id="web" ></web>
-        <!-- <div class="item-container">
-            <input type="button" class="btn" onclick="loaddownLoadUrl" value="打开带下载链接的网页" />
-        </div>
-        <div class="item-container">
-            <input type="button" class="btn" onclick="loadFileUploadSupportUrl" value="打开webview支持文件上传网页" />
-        </div>
-        <div class="item-container">
-            <input type="button" class="btn" onclick="allowthirdcookie" value="支持cookie跨域" />
-        </div> -->
     </div>
 </template>
 
 <style>
-    /* @import '../Common/css/common.css'; */
 
     .container{
       flex-direction: column;
@@ -47,17 +37,17 @@
             componentName: 'webview'
         },
         onInit: function () {
-            this.$page.setTitleBar({ text: 'webview' })
+            // this.$page.setTitleBar({ text: 'webview' })
             // this.$page.setTitleBar({backgroundColor: '00000000', menu: false})
 
         },
-        loadUrl: function () {
-            webview.loadUrl({
-                url: 'https://www.uber.com/',
-                allowthirdpartycookies: true
-            });
+        // loadUrl: function () {
+        //     webview.loadUrl({
+        //         url: 'https://www.uber.com/',
+        //         allowthirdpartycookies: true
+        //     });
 
-        },
+        // },
         // loaddownLoadUrl: function () {
         //     webview.loadUrl({
         //         url: 'http://www.toutiao.com'
