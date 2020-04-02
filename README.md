@@ -19,11 +19,18 @@ https://developer.huawei.com/consumer/en/doc/development/quickApp-Guides/quickap
 
 Ensure that USB connected device has Huawei Quick App Loader installed as well as USB debugging enabled.
 
-<img src="pictures/QuickAppLoader_installed.jpg" height="600"/>
+<kbd>
+  <img src="pictures/QuickAppLoader_installed.jpg" height="600"/>
+</kbd>
+
 
 
 ### Create and run standalone RPK file
 
-<img src="pictures/build_release.png" height="600"/>
+<kbd>
+  <img src="pictures/build_release.png" height="600"/>
+</kbd>
 
-<img src="pictures/device_downloads.jpg" height="600"/>
+<kbd>
+  <img src="pictures/device_downloads.jpg" height="600"/>
+</kbd>
