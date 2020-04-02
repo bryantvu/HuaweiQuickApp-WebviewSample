@@ -1,7 +1,9 @@
 # HuaweiQuickApp-WebviewSample
 Huawei Quick App Sample featuring WebView feature
 
-<img src="pictures/QuickApp_WebView.jpg" height="600"/>
+<kbd>
+  <img src="pictures/QuickApp_WebView.jpg" height="600"/>
+</kbd>
 
 ## How to use
 
