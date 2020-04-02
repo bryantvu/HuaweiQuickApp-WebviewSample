@@ -27,8 +27,16 @@ Ensure that USB connected device has Huawei Quick App Loader installed as well a
 
 ### Create and run standalone RPK file
 
+To build the RPK file, go to Build > Run Release
+
 <kbd>
   <img src="pictures/build_release.png" height="600"/>
+</kbd>
+
+
+
+<kbd>
+  <img src="pictures/build_cert.png" height="500"/>
 </kbd>
 
 <kbd>
