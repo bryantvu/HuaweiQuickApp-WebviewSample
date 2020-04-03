@@ -1,69 +1,73 @@
 <template>
     <div class="container">
 
-        <!-- <div class="item-container">
-            <text class="page-title">{{componentName}}</text>
+        <div class="item-container">
+            <text id="app-title">Huawei Quick App Demo</text>>
         </div>
         <div class="item-container">
-            <input type="button" class="btn" onclick="loadUrl" value="Uber Website" />
-        </div> -->
-        <web src="https://www.uber.com/" id="web" ></web>
+            <input id="input-text" type="text" value="{{inputValue}}" onchange="updateValue" 
+            placeholder="Enter target URL here" ></input>
+        </div>
+        <div class="item-container">
+            <input type="button" class="btn" onclick="loadUrl" value="Load URL" />
+        </div>
+        <div class="item-container">
+            <text>Note: URL formatting must match "https://wwww.example.com"</text>>
+        </div>
+        <!-- Uncomment this section use embedded WebView component -->
+        <!-- <web id="web" src="{{targetUrl}}"  ></web> -->
     </div>
 </template>
 
 <style>
 
-    .container{
-      flex-direction: column;
-    }
+  #app-title{
+    margin-top: 50px;
+    font-size: 40px;
+    color: #000000;
+  }
 
-    .item-container {
-        margin-bottom: 50px;
-        margin-right: 60px;
-        margin-left: 60px;
-        flex-direction: column;
-    }
+  #input-text{
+    margin-top: 200px;
+  }
 
-    .page-title{
-      text-align:center
-    }
+  .container{
+    flex-direction: column;
+  }
+
+  .item-container {
+    margin-bottom: 50px;
+    margin-right: 60px;
+    margin-left: 60px;
+    flex-direction: column;
+  }
+
+  .page-title{
+    text-align:center
+  }
+
 </style>
 
 <script>
     import webview from '@system.webview'
 
     export default {
-        data: {
-            componentName: 'webview'
-        },
-        onInit: function () {
-            // this.$page.setTitleBar({ text: 'webview' })
-            // this.$page.setTitleBar({backgroundColor: '00000000', menu: false})
-
-        },
-        // loadUrl: function () {
-        //     webview.loadUrl({
-        //         url: 'https://www.uber.com/',
-        //         allowthirdpartycookies: true
-        //     });
-
-        // },
-        // loaddownLoadUrl: function () {
-        //     webview.loadUrl({
-        //         url: 'http://www.toutiao.com'
-        //     });
-        // },
-        // loadFileUploadSupportUrl() {
-        //     webview.loadUrl({
-        //         url: "http://lfmemberdev.hwcloudtest.cn:9094//fastapp/download/webview/file_chooser_demo_3.html"
-        //     });
-        // },
-        // allowthirdcookie: function () {
-        //     webview.loadUrl({
-        //         url: 'https://page.cainiao.com/mcn/publichome/pkg.html',
-        //         // url: "https://www.hao123.com/",
-        //         allowthirdpartycookies: true
-        //     });
-        // }
+      data: {
+          componentName: 'webview',
+          inputValue:''
+          // Uncomment this line and change the URl to desired target to use embedded WebView component
+          // ,targetUrl: 'https://developer.huawei.com/consumer/en/'
+      },
+      onInit: function () {
+      },
+      updateValue(e){
+        e.text === undefined ? '' : this.inputValue=e.text;
+      },
+      loadUrl: function () {
+        webview.loadUrl({
+              url: this.inputValue,
+              allowthirdpartycookies: true
+          });
+      }
     }
 </script>
