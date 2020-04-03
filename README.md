@@ -50,16 +50,44 @@ Navigate to the Downloads folder and select the RPK file. The Quick App has been
   <img src="pictures/device_downloads.jpg" height="500"/>
 </kbd>
 
-### Change WebView URL
+### Embedded WebView component
 
-Change the value of "src" in the <web> object located at the top of the page of /src/Hello/hello.ux to the desired website URL.
+Uncomment the <web> object located at the end of the <template> object at the top of the page of /src/Hello/hello.ux and comment the rest of the contents within the parent <div>.
 
 ```html
 <template>
     <div class="container">
-        <web src="https://www.uber.com/" id="web" ></web>
+
+        <!--<div class="item-container">
+            <text id="app-title">Huawei Quick App Demo</text>>
+        </div>
+        <div class="item-container">
+            <input id="input-text" type="text" value="{{inputValue}}" onchange="updateValue" 
+            placeholder="Enter target URL here" ></input>
+        </div>
+        <div class="item-container">
+            <input type="button" class="btn" onclick="loadUrl" value="Load URL" />
+        </div>
+        <div class="item-container">
+            <text>Note: URL formatting must match "https://wwww.example.com"</text>>
+        </div> -->
+        <!-- Uncomment this section use embedded WebView component -->
+        <web id="web" src="{{targetUrl}}"  ></web>
     </div>
 </template>
 ```
 
-<img src="pictures/code_url.png" height="400"/>
+<img src="pictures/code_url2.png" height="400"/>
+
+Lastly, change the value of "targetUrl" to the desired website URL. 
+
+```json
+data: {
+          componentName: 'webview',
+          inputValue:''
+          // Uncomment this line and change the URl to desired target to use embedded WebView component
+          ,targetUrl: 'https://developer.huawei.com/consumer/en/'
+      }
+```
+
+<img src="pictures/code_url3.png" height="400"/>
