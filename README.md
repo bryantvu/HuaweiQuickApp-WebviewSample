@@ -2,7 +2,7 @@
 Huawei Quick App Sample featuring WebView feature
 
 <kbd>
-  <img src="pictures/QuickApp_WebView.jpg" height="500"/>
+  !<img src="pictures/QuickApp_WebView_main.jpg" height="500"/> !<img src="pictures/QuickApp_WebView_loaded.jpg" height="500"/>
 </kbd>
 
 
