@@ -81,7 +81,7 @@ Uncomment the <web> object located at the end of the <template> object at the to
 
 Lastly, change the value of "targetUrl" to the desired website URL. 
 
-```json
+```javascript
 data: {
           componentName: 'webview',
           inputValue:''
@@ -90,4 +90,4 @@ data: {
       }
 ```
 
-<img src="pictures/code_url3.png" height="400"/>
+<img src="pictures/code_url3.png" height="500"/>
