@@ -52,7 +52,7 @@ Navigate to the Downloads folder and select the RPK file. The Quick App has been
 
 ### Embedded WebView component
 
-Uncomment the <web> object located at the end of the <template> object at the top of the page of /src/Hello/hello.ux and comment the rest of the contents within the parent div.
+Uncomment the web object located at the end of the template object at the top of the page of /src/Hello/hello.ux and comment out the rest of the contents within the parent div.
 
 ```html
 <template>
