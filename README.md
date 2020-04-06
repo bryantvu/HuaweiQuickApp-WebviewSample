@@ -1,7 +1,9 @@
 # HuaweiQuickApp-WebviewSample
-Huawei Quick App Sample featuring WebView feature
+Huawei Quick App Sample featuring HTML Web Element feature
 
-<kbd><img src="pictures/QuickApp_WebView_main.jpg" height="500"/></kbd><kbd><img src="pictures/QuickApp_WebView_loaded.jpg" height="500"/></kbd>
+This sample app includes both the HTML web element as well as the webview, but only the web element has been activated. See the instructions below to activate the webview.
+
+<kbd><img src="pictures/quickapp1.jpg" height="500"/></kbd><kbd><img src="pictures/quickapp2.jpg" height="500"/></kbd>
 
 
 RPK download: https://github.com/bryantvu/HuaweiQuickApp-WebviewSample/tree/master/dist
@@ -50,9 +52,11 @@ Navigate to the Downloads folder and select the RPK file. The Quick App has been
   <img src="pictures/device_downloads.jpg" height="500"/>
 </kbd>
 
-### Embedded WebView component
+### Embedded Web element vs Webview
 
-Uncomment the web object located at the end of the template object at the top of the page of /src/Hello/hello.ux and comment out the rest of the contents within the parent div.
+This sample implements the web element that is defined in the HTML section of the UX file versus a webview that is loaded programmatically. The web element has the advantage that a developer can control the UI around it, but the URL must be predefined. On the other hand, the webview URL does not need to be predefined and can load a path entered by the user. The downside here is that it loads over the existing page and a developer has little control on the UI around the webview.
+
+The source code includes a section that implements the Webview instead of the embedded web element. To switch to this implementation, uncomment the web object located inside the template at the top of the page of /src/Hello/hello.ux and comment out the rest of the contents within the parent div.
 
 ```html
 <template>
