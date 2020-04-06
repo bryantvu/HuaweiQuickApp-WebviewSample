@@ -88,9 +88,8 @@ Lastly, change the value of "targetUrl" to the desired website URL.
 ```javascript
 data: {
           componentName: 'webview',
-          inputValue:''
-          // Uncomment this line and change the URl to desired target to use embedded WebView component
-          ,targetUrl: 'https://developer.huawei.com/consumer/en/'
+          inputValue:'',
+          targetUrl: 'https://developer.huawei.com/consumer/en/'
       }
 ```
 
