@@ -1,5 +1,5 @@
 # HuaweiQuickApp-WebviewSample
-Huawei Quick App Sample featuring HTML Web Element feature
+**Huawei Quick App Sample featuring HTML Web Element feature**
 
 This sample app includes both the HTML web element as well as the webview, but only the web element has been activated. See the instructions below to activate the webview.
 
