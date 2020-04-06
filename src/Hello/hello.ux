@@ -1,7 +1,7 @@
 <template>
     <div class="container">
 
-        <div class="item-container">
+        <!-- <div class="item-container">
             <text id="app-title">Huawei Quick App Demo</text>>
         </div>
         <div class="item-container">
@@ -13,9 +13,9 @@
         </div>
         <div class="item-container">
             <text>Note: URL formatting must match "https://wwww.example.com"</text>>
-        </div>
+        </div> -->
         <!-- Uncomment this section use embedded WebView component -->
-        <!-- <web id="web" src="{{targetUrl}}"  ></web> -->
+        <web id="web" src="{{targetUrl}}"  ></web>
     </div>
 </template>
 
@@ -57,6 +57,7 @@
           inputValue:''
           // Uncomment this line and change the URl to desired target to use embedded WebView component
           // ,targetUrl: 'https://developer.huawei.com/consumer/en/'
+          ,targetUrl: 'https://www.bing.com/'
       },
       onInit: function () {
       },
