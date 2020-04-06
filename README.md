@@ -3,6 +3,8 @@
 
 This sample app includes both the HTML web element as well as the webview, but only the web element has been activated. See the instructions below to activate the webview.
 
+The goal here is to try out an exsiting webpage and see how it feels inside of the web element. Use the Bing search to reach your desired webpage.
+
 <kbd><img src="pictures/quickapp1.jpg" height="500"/></kbd><kbd><img src="pictures/quickapp2.jpg" height="500"/></kbd>
 
 
