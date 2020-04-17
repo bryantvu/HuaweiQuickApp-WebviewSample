@@ -49,7 +49,9 @@
 </style>
 
 <script>
-    import webview from '@system.webview'
+    import webview from '@system.webview';
+    // import push from '@service.push';
+    // import account from '@service.account'
 
     export default {
       data: {
@@ -57,9 +59,36 @@
           inputValue:''
           // Uncomment this line and change the URl to desired target to use embedded WebView component
           // ,targetUrl: 'https://developer.huawei.com/consumer/en/'
+          // ,targetUrl: 'https://www.whatsmybrowser.org/'
           ,targetUrl: 'https://www.bing.com/'
       },
       onInit: function () {
+        // var providerResult = account.getProvider();
+        // console.log("providerResult >> "+providerResult);
+        // account.authorize({
+        //   appid: '101890505',
+        //   type: 'token',
+        //   state: 5,
+        //   success: function (data) {
+        //     console.log('handling success: ' + data.code);
+        //   },
+        //   fail: function (data, code) {
+        //     console.log('handling fail, code =' + code);
+        //   }
+        // })
+        // var providerResult = push.getProvider();
+        // console.log("provider result >> " + providerResult);
+        // push.subscribe({
+        //   success: function (data) {
+        //     console.log('push.subscribe succeeded, result data = ' + JSON.stringify(data));
+        //   },
+        //   fail: function (data, code) {
+        //     console.log('push.subscribe failed, result data = ' + JSON.stringify(data) + ', code = ' + code);
+        //   },
+        //   complete: function () {
+        //     console.log('push.subscribe completed');
+        //   }
+        // })
       },
       updateValue(e){
         e.text === undefined ? '' : this.inputValue=e.text;
